@@ -9,16 +9,16 @@ using namespace std;
 DWORD id;
 
 int main() {
-	HWND hWnd = FindWindowA(0, ("Lunar Client (1.8.9-2b78591/master)"));
-	GetWindowThreadProcessId(hWnd, &id);
+    HWND hWnd = FindWindowA(0, ("window name"));
+    GetWindowThreadProcessId(hWnd, &id);
 
-	if (hWnd) {
-		cout << id << endl;
+    if (hWnd) {
+        cout << id << endl;
 
-		SetWindowTextA(hWnd, "MINECRAFT HACKED BY SINCERATE");
-	}
-	else {
-		cout << "Window not found idiot fucking actually add a proper window this time retard!" << endl;
-	}
-	system("pause");
+        SetWindowTextA(hWnd, "new name");
+    }
+    else {
+        cout << "Window not found" << endl;
+    }
+    system("pause");
 }
